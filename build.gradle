@@ -50,7 +50,21 @@ dependencies {
 group = 'kr.co.sist'
 version = '1.0.0-BUILD-SNAPSHOT'
 description = 'all_about_knowledge'
-java.sourceCompatibility = JavaVersion.VERSION_11
+java.sourceCompatibility = JavaVersion.VERSION_17
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+dependencies {
+    annotationProcessor libs.org.projectlombok.lombok
+}
 
 publishing {
     publications {
