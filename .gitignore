@@ -18,10 +18,6 @@ out/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-*/target/*
-target/
-*/log/*
-log/
 
 ### NetBeans ###
 /nbproject/private/
@@ -35,4 +31,55 @@ log/
 
 ### Mac OS ###
 .DS_Store
-/build/
+
+### Gradle ###
+.gradle/
+build/
+!gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### Maven ###
+target/
+*/target/*
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+### Log Files ###
+*.log
+log/
+logs/
+*/log/*
+*/logs/*
+
+### Sensitive Configuration Files ###
+**/application-local.properties
+**/application-local.yml
+**/application-dev.properties
+**/application-dev.yml
+**/database.properties
+**/db.properties
+*.env
+.env.local
+
+### Temporary and Backup Files ###
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.~lock.*
+*.class
+
+### OS Generated Files ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
