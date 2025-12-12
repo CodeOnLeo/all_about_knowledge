@@ -30,13 +30,6 @@ public class NoticeManagementDAO {
 		return list;
 	}
 
-	/**
-	 * �������� status�� �� �з��ϴ� method
-	 * �ۼ���: ���Ͻ�
-	 * @param status 0: ���� 1: �Խ� ������ :����
-	 * @return
-	 * @throws PersistenceException
-	 */
 	public List<NoticeManagementDomain> selectNoticeStatus(int status) throws PersistenceException {
 		List<NoticeManagementDomain> list = null;
 
@@ -48,13 +41,6 @@ public class NoticeManagementDAO {
 		return list;
 	}
 
-	/**
-	 * ������ ���������� �� ������ �������� method
-	 * �ۼ���: ���Ͻ�
-	 * @param noti_num �������� ��ȣ
-	 * @return
-	 * @throws PersistenceException
-	 */
 	public NoticeManagementDomain selectOneNotice(String noti_num) throws PersistenceException {
 		NoticeManagementDomain nDomain = null;
 		MybatisDAO mbDAO = MybatisDAO.getInstance();
@@ -66,12 +52,6 @@ public class NoticeManagementDAO {
 
 	}
 
-	/**
-	 * �������� ���̺��� �������� ��ȣ�� �ְ����� �������� method
-	 * �ۼ���: ���Ͻ�
-	 * @return
-	 * @throws PersistenceException
-	 */
 	public String selectMaxValue() throws PersistenceException {
 		String noti_no = null;
 		MybatisDAO mbDAO = MybatisDAO.getInstance();
@@ -84,8 +64,8 @@ public class NoticeManagementDAO {
 	}
 
 	/**
-	 * �������� ���̺��� ���ο� ���������� �Է��ϴ� method
-	 * �ۼ���: ���Ͻ�
+	 * 占쏙옙占쏙옙占쏙옙占쏙옙 占쏙옙占싱븝옙占쏙옙 占쏙옙占싸울옙 占쏙옙占쏙옙占쏙옙占쏙옙占쏙옙 占쌉뤄옙占싹댐옙 method
+	 * 占쌜쇽옙占쏙옙: 占쏙옙占싹쏙옙
 	 * @param nVO
 	 * @return
 	 * @throws PersistenceException
@@ -102,12 +82,6 @@ public class NoticeManagementDAO {
 		return cnt;
 	}
 
-	/**
-	 * �Խñ��� �����ϴ� method
-	 * �ۼ���: ���Ͻ�
-	 * @param nVO
-	 * @return
-	 */
 	public int updateNotice(NoticeManagementVO nVO) throws PersistenceException {
 		int cnt = 0;
 		MybatisDAO mbDAO = MybatisDAO.getInstance();
@@ -120,12 +94,6 @@ public class NoticeManagementDAO {
 		return cnt;
 	}
 
-	/**
-	 * �Խñ��� �����ϴ� method
-	 * �ۼ���: ���Ͻ�
-	 * @param noti_no
-	 * @return
-	 */
 	public int deleteNotice(String noti_no) throws PersistenceException {
 		int cnt = 0;
 		MybatisDAO mbDAO = MybatisDAO.getInstance();
@@ -138,12 +106,6 @@ public class NoticeManagementDAO {
 		return cnt;
 	}
 
-	/**
-	 * �Է��� ������ ������ �Խñ��� �˻��ϴ� method
-	 * @param title
-	 * @return
-	 * @throws PersistenceException
-	 */
 	public List<NoticeManagementDomain> selectNoticeTitle(String title) throws PersistenceException {
 		List<NoticeManagementDomain> list = null;
 		MybatisDAO mbDAO = MybatisDAO.getInstance();

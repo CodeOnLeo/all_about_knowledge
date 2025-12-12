@@ -29,13 +29,6 @@ public class EduCategoryManagementDAO {
 
 	}
 
-	/**
-	 * �ش��ϴ� ���� ī�װ����� �ش��ϴ� ����ī�װ����� ��ȸ�ϴ� method
-	 * �ۼ��� :���Ͻ�
-	 * @param cat_code
-	 * @return
-	 * @throws PersistenceException
-	 */
 	public List<EduCategoryManagementDomain> selectSubCategory(String cat_code) throws PersistenceException {
 		List<EduCategoryManagementDomain> list = null;
 
@@ -48,13 +41,6 @@ public class EduCategoryManagementDAO {
 
 	}
 
-	/**
-	 * �����ͺ��̽��� ī�װ����� �߰��ϴ� method.
-	 * �ۼ��� :���Ͻ�
-	 * @param emVO
-	 * @return
-	 * @throws PersistenceException
-	 */
 	public int insertCategory(EduCategoryManagementVO emVO) throws PersistenceException {
 		int cnt = 0;
 
@@ -70,12 +56,6 @@ public class EduCategoryManagementDAO {
 
 	}
 
-	/**
-	 * DB������ ī�װ��� �ڵ��� �ִ��� ���ؿ��� method.
-	 * �ۼ��� :���Ͻ�
-	 * @return
-	 * @throws PersistenceException
-	 */
 	public String selectMaxvalue() throws PersistenceException {
 		MybatisDAO mbDAO = MybatisDAO.getInstance();
 		SqlSession ss = mbDAO.getMyBatisHandler(false);
